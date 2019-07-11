@@ -1,1 +1,0 @@
-python pyinstaller.py -F -n SMSServer --version-file=C:\Users\wen\Documents\GitHub\SX-SMSServer\docs\file_version_info.txt --icon=C:\Users\wen\Documents\GitHub\SX-SMSServer\icons\logo.ico C:\Users\wen\Documents\GitHub\SX-SMSServer\run_test.py
