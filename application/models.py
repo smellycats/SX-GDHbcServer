@@ -7,6 +7,7 @@ from application import db
 class Users(db.Model):
     """用户"""
     __tablename__ = 'users'
+    #__bind_key__ = 'sqlite' 
 
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(20), index=True)
@@ -39,6 +40,7 @@ class Users(db.Model):
 class Scope(db.Model):
     """权限范围"""
     __tablename__ = 'scope'
+    #__bind_key__ = 'sqlite'
 
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(64), unique=True)

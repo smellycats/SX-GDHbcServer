@@ -71,6 +71,7 @@ def unauthorized(error):
 def forbidden(error):
     return jsonify({'message': 'Forbidden'}), 403
 
+
 @app.errorhandler(404)
 def page_not_found(error):
     return jsonify({'message': 'Not Found'}), 404

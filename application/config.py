@@ -10,9 +10,11 @@ class Config(object):
     # token生存周期，默认2小时 int
     #EXPIRES = 7200
     # 数据库连接 string
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///../hbc.db'
+    SQLALCHEMY_DATABASE_URI = 'sqlite': 'sqlite:///../hbc.db'
     # 数据库连接 dict
-    SQLALCHEMY_BINDS = {}
+    SQLALCHEMY_BINDS = {
+        'hbc': 'oracle://kakou:kakou@192.168.1.102/kakou'
+    }
     # 连接池大小 int
     #SQLALCHEMY_POOL_SIZE = 5
     # 用户权限范围 dict
